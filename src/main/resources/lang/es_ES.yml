@@ -1,0 +1,155 @@
+PLUGIN:
+  LOADED:
+    - ''
+    - '&3Tr&bChat &7cargando...'
+    - ''
+  LOADED-CHAT-FORMATS: '&8[&3Tr&bChat&8] &bCHAT &8| &3Formatos de chat cargados... &8[{0} Ms]'
+  LOADED-FUNCTIONS: '&8[&3Tr&bChat&8] &bCHAT &8| &3Funciones del chat cargados... &8[{0} Ms]'
+  LOADED-FILTER-LOCAL: '&8[&3Tr&bChat&8] &aFILTRO &8| &3Cargados filtros locales &b{0} &3.'
+  LOADED-FILTER-CLOUD: '&8[&3Tr&bChat&8] &aFILTRO &8| &3Cargados filtros de palabras de la nube &a{0} &3. &8[{1} - {2}]'
+  RELOADED: '&8[&3Tr&bChat&8] &7Ajustes cambiados, recargado...'
+  FAILED-LOAD-FILTER-CLOUD: '&8[&3Tr&bChat&8] &8No se puede actualizar el diccionario de sinonimos de filtro desde la nube'
+  REGISTERED-BUNGEE: '&8[&3Tr&bChat&8] &6Soporte del chat a &eBungeeCord &6hecho.'
+  NONE-BUNGEE: '&8[&3Tr&bChat&8] &7No soporte a bungeecord actualmente'
+  DEPEND:
+    DOWNLOAD: '&8[&3Tr&bChat&8] &eDEPENDENCIA &8| &7Descargando dependencia del plugin &f{0} &7...'
+    INSTALL: '&8[&3Tr&bChat&8] &eDEPENDENCIA &8| &7Descarga exitosa de &3{0} &7, reiniciando el servidor...'
+    INSTALL-FAILED: '&8[&3Tr&bChat&8] &eDEPENDENCIA &8| &7Fallo al instalar la dependencia &c{0} &7...'
+  ENABLED:
+    - '&8[&3Tr&bChat&8] &bINFORMACION &8| &3Cargado. TrChat &av{0} &3fue activado.'
+  DISABLED:
+    - '&8[&3Tr&bChat&8] &bINFORMACION &8| &7Desactivado. Gracias por usar :)'
+  COMMAND-TITLE: '&3「&8&m--------------------------------------------------&3」'
+  UPDATE-NOTIFY:
+    LATEST: '&8[&3Tr&bChat&8] &2Estas usando la ultima version de &3TrChat&a.'
+    DEV: '&8[&3Tr&bChat&8] &6Estas usando la version DEV de &3TrChat&6.'
+    TOO-OLD:
+      - "&8--------------------------------------------------"
+      - "&r"
+      - "&8# &4La version de &cTrChat &4que estas usando es antigua"
+      - "&8# &4Porfavor actualiza a la ultima version rapidamente!"
+      - "&8# &r"
+      - "&8# &4SpigotMC: &chttps://www.spigotmc.org/members/435323"
+      - "&8# &r"
+      - "&8# &r"
+      - "&8# &4El servidor iniciara en &c&l{0} segundos &4..."
+      - "&r"
+      - "&8--------------------------------------------------"
+    HEADER:
+      - ''
+      - '§3--------------------------------------------------'
+      - '&7▪ &3TrChat &aNotificacion de Actualizaciones &8{0} &7➦ &8{1}'
+    FOOTER:
+      - '&7▪ &2Github: &a&nhttps://github.com/Arasple/TrChat/releases/latest'
+      - '§3--------------------------------------------------'
+
+  DEBUG:
+    'ON':
+      - ==: TITLE
+        title: '&7&lMODO DEBUG'
+        subtitle: '&3&lactualmente &a&lActivado&3&l.'
+      - ==: SOUND
+        sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+    'OFF':
+      - ==: TITLE
+        title: '&7&lMODO DEBUG'
+        subtitle: '&3&lactualmente &c&lDesactivado&3&l.'
+      - ==: SOUND
+        sound: 'BLOCK_ANVIL_LAND-1-0'
+
+ERROR:
+  VERSION: '&8[&3Tr&bMenu&8] &cERROR &8| &7Error de version. Porfavor descarga el plugin nuevamente.'
+  JS:
+    - '&8[&3Tr&bMenu&8] &cERROR &8| &cError de expresion: &2{0}'
+    - '&6{1}'
+    - '&8{2}'
+
+GENERAL:
+  TOO-LONG: '&8[&3Tr&bChat&8] &7El mensaje es muy largo. &8[&6{0}&8/&2{1}&8]'
+  TOO-SIMILAR: '&8[&3Tr&bChat&8] &7Porfavor no repitas el mismo mensaje.'
+  NO-PERMISSION: '&8[&3Tr&bChat&8] &7No tienes los suficientes permisos para esto.'
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &cNecesitas ser un jugador para esto.'
+
+COOLDOWNS:
+  CHAT:
+    - ==: ACTION
+      text: '&7&lNecesitas esperar &6{0} secs &7&lpara escribir nuevamente.'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-2'
+  ITEM-SHOW:
+    - ==: ACTION
+      text: '&3&lNecesitas esperar &a{0} secs &3&lantes de mostrar tu item de nuevo.'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+
+COMMAND-CONTROLLER:
+  DENY: '&c&lNo puedes usar este comando.'
+
+MENTIONS:
+  NOTIFY:
+    - ==: ACTION
+      text: '&d&l&k|&r &3&lJugador &a&l{0} &3&lte menciono en el chat &d&l&k|'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+
+PRIVATE-MESSAGE:
+  SPY-FORMAT: '&8[&3Espia&8] &6{0} &2-> &3{1}&f: &7{2}'
+  SPY:
+    'ON':
+      - ==: ACTION
+        text: '&c&l&k|&r &a&lModo espia activado &c&l&k|'
+      - ==: SOUND
+        sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+    'OFF':
+      - ==: ACTION
+        text: '&c&l&k|&r &c&lModo espia desactivado &c&l&k|'
+      - ==: SOUND
+        sound: 'BLOCK_ANVIL_LAND-1-0'
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &cTienes que ser un jugador para esto'
+  NO-PLAYER:
+    - ==: ACTION
+      text: '&3&lNombre del jugador requerido'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&lContexto del chat requerido'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  NOT-EXIST: '&8[&3Tr&bChat&8] &7El jugador no esta conectado o no existe.'
+  RECEIVE:
+    - ==: ACTION
+      text: '&8[ &a! &8] &3Has recibido un mensaje de &a{0} &3.'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-2'
+
+GLOBAL-MESSAGE:
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &cTienes que ser un jugador para esto.'
+  NOT-ENABLE: '&8[&3Tr&bChat&8] &7No se pudo conectar a &eBungeeCord &7.'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&lMensaje requerido'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+
+STAFF-CHANNEL:
+  NOT-PLAYER: '&8[&3Tr&bChat&8] &cTienes que ser un jugador para esto.'
+  NO-MESSAGE:
+    - ==: ACTION
+      text: '&7&lMensaje requerido'
+    - ==: SOUND
+      sound: 'ENTITY_ITEM_BREAK-1-0'
+  JOIN:
+    - ==: ACTION
+      text: '&a&lChat de staff activado.'
+    - ==: TEXT
+      text: '&8[&3Tr&bChat&8] &3Has entrado al canal de staff, Escribelo de nuevo para salir'
+    - ==: SOUND
+      sound: 'BLOCK_NOTE_BLOCK_PLING-1-0'
+  QUIT:
+    - ==: ACTION
+      text: '&3&lChat de staff desactivado.'
+    - ==: TEXT
+      text: '&8[&3Tr&bChat&8] &7Has salido del canal de staff...'
+    - ==: SOUND
+      sound: 'BLOCK_ANVIL_LAND-1-0'
